@@ -760,13 +760,14 @@ html {
   }
 }
 .main-block__aliexpress-img {
-  animation: bounceInLeft 40s both 0s infinite;
+  animation: bounceInLeft 40s both 1s infinite;
   width: 212px;
   height: 211px;
   border-radius: 50%;
   opacity: 1;
 }
 .main-block-img {
+  animation: bounceInLeft 40s both infinite;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -775,19 +776,21 @@ html {
   min-width: 212px;
   min-height: 211px;
   border-radius: 50%;
-  background: no-repeat 50% 50% rgba(253, 191, 15, 0.7);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: rgba(253, 191, 15, 0.7);
 }
 .main-block__1 {
-  animation: bounceInLeft 40s both 10s infinite;
-  background: url(../img/advantages/4.png);
+  animation-delay: 11s;
+  background-image: url(../img/advantages/4.png);
 }
 .main-block__2 {
-  animation: bounceInLeft 40s both 20s infinite;
-  background: url(../img/advantages/5.png);
+  animation-delay: 21s;
+  background-image: url(../img/advantages/5.png);
 }
 .main-block__3 {
-  animation: bounceInLeft 40s both 30s infinite;
-  background: url(../img/advantages/6.png);
+  animation-delay: 31s;
+  background-image: url(../img/advantages/6.png);
 }
 
 .advertising {
@@ -1050,31 +1053,38 @@ html {
 }
 
 .application {
-  padding: 3.5rem 0 4rem 0;
+  padding: 3.5rem 0 0 0;
   background-color: #7224EA;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .application {
-    padding: 3rem 0 3.5rem 0;
+    padding: 3rem 0 0 0;
   }
 }
 @media (max-width: 768px) {
   .application {
-    padding: 2.5rem 0 3rem 0;
+    padding: 2.5rem 0 0 0;
   }
 }
 @media (max-width: 576px) {
   .application {
-    padding: 2rem 0 2.5rem 0;
+    padding: 2rem 0 0 0;
   }
 }
 @media (max-width: 480px) {
   .application {
-    padding: 1.5rem 0 2rem 0;
+    padding: 1.5rem 0 0 0;
   }
+}
+.application__container {
+  position: relative;
 }
 .application__title-block {
   margin: 0 0 3.75rem 0;
+  position: relative;
+  z-index: 10;
 }
 @media (max-width: 768px) {
   .application__title-block {
@@ -1096,6 +1106,8 @@ html {
   flex-wrap: wrap;
   margin: 0 -0.55rem -2.4rem -0.55rem;
   max-width: 794px;
+  position: relative;
+  z-index: 10;
 }
 @media (max-width: 630px) {
   .application__body {
@@ -1154,6 +1166,8 @@ html {
   min-height: 3rem;
   padding: 5px 1.75rem 8px 1.9rem;
   background-color: #FF5900;
+  position: relative;
+  z-index: 10;
 }
 @media (max-width: 576px) {
   .application__btn {
@@ -1169,6 +1183,59 @@ html {
 }
 .application__btn:hover svg path {
   fill: #000;
+}
+.application__btn-block {
+  padding-bottom: 4rem;
+}
+@media (max-width: 992px) {
+  .application__btn-block {
+    padding-bottom: 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .application__btn-block {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .application__btn-block {
+    padding-bottom: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .application__btn-block {
+    padding-bottom: 2rem;
+  }
+}
+.application__img-block::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 781px;
+  height: 781px;
+  background: radial-gradient(#BE416C 24%, transparent 24% 42.5%, #BE416C 42.5% 100%);
+  bottom: -120px;
+  right: -200px;
+}
+.application__img {
+  position: absolute;
+  background: url(../img/application/hend.png);
+  z-index: 1;
+  width: 588px;
+  height: 890px;
+  top: 7%;
+  right: -2%;
+}
+.application__img::after {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 360px;
+  position: absolute;
+  right: 95px;
+  bottom: 470px;
+  background: url(../img/application/aliexpress.png) no-repeat 50% 20%;
 }
 
 .instruction {

@@ -136,7 +136,7 @@
   }
   
   &__aliexpress-img {
-    animation: bounceInLeft 40s both 0s infinite;
+    animation: bounceInLeft 40s both 1s infinite;
     
     width: 212px;
     height: 211px;
@@ -144,6 +144,8 @@
     opacity: 1;
   }
   &-img {
+    animation: bounceInLeft 40s both infinite;
+
     position: absolute;
     display: flex;
     justify-content: center;
@@ -152,22 +154,20 @@
     min-width: 212px;
     min-height: 211px;
     border-radius: 50%;
-    
-    background: no-repeat 50% 50% rgba($color: #FDBF0F, $alpha: 0.7);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: rgba($color: #FDBF0F, $alpha: 0.7);
   }
   &__1 {
-    animation: bounceInLeft 40s both 10s infinite;
-
-    background: url(../img/advantages/4.png);
+    animation-delay: 11s;
+    background-image: url(../img/advantages/4.png);
   }
   &__2 {
-    animation: bounceInLeft 40s both 20s infinite;
-
-    background: url(../img/advantages/5.png);
+    animation-delay: 21s;
+    background-image: url(../img/advantages/5.png);
   }
   &__3 {
-    animation: bounceInLeft 40s both 30s infinite;
-
-    background: url(../img/advantages/6.png);
+    animation-delay: 31s;
+    background-image: url(../img/advantages/6.png);
   }
 }
