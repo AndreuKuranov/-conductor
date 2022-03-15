@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@700&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles/fontello/animation.css" type="text/css" />
   <link rel="stylesheet" href="styles/fontello/fontello.css" type="text/css" />
@@ -119,6 +119,9 @@
           <img class="main-block__background-img" src="img/main-block/girl.png" alt="background-girl"/>
           <div class="main-block__aliexpress">
             <img class="main-block__aliexpress-img" src="img/main-block/aliexpress.png" alt="aliexpress"/>
+            <div class="main-block-img main-block__1"></div>
+            <div class="main-block-img main-block__2"></div>
+            <div class="main-block-img main-block__3"></div>
           </div>
         </div>
       </div>
@@ -662,120 +665,6 @@
           <img class="contact-us__background-img ibg__img" src="img/contact-us/scenery.jpg" alt="background"/>
         </div>
       </section>
-      <!-- <div id="modal__back-call" class="modal">
-        <div class="modal__container contact-us__container container">
-          <button type="button" class="modal__close" data-close></button>
-          <form action="/" method="post" class="contact-us__form">
-            <h2 class="contact-us__title-block title-block">Пожалуйста, оставьте свои контакты</h2>
-            <div class="contact-us__body">
-              <div class="contact-us__column">
-                <div class="contact-us__item">
-                  <input 
-                    id="nameM" 
-                    name="name" 
-                    type="text" 
-                    placeholder="Как к вам обращаться"
-                    pattern="^[A-Za-zА-Яа-яЁё]+$"
-                    class="contact-us__input"
-                    required
-                    tabindex="1"
-                    title="Введите имя"
-                  >
-                  <label class="contact-us__label" for="nameM">Имя</label>
-                </div>
-                <div class="contact-us__item">
-                  <input 
-                    id="phoneM" 
-                    name="phone" 
-                    type="tel"
-                    pattern="\+?[0-9\s\-\(\)]+"
-                    placeholder="+7 (123) 12-12-123"
-                    class="contact-us__input"
-                    required
-                    tabindex="2"
-                    title="Формат номера: +7 (123) 12-12-123"
-                  >
-                  <label class="contact-us__label" for="phoneM">Телефон</label>
-                </div>
-                <div class="contact-us__item">
-                  <input 
-                    id="emailM" 
-                    name="email" 
-                    type="email" 
-                    placeholder="Нужен для связи"
-                    class="contact-us__input"
-                    required
-                    tabindex="3"
-                    title="Формат e-mail: admin@mail.ru"
-                  >
-                  <label class="contact-us__label" for="emailM">Е-mail</label>
-                </div>
-              </div>
-
-              <div class="contact-us__column">
-                <div class="contact-us__item">
-                  <select
-                    name="eimeToCall" 
-                    id="eimeToCallM"
-                    class="contact-us__input contact-us__select"
-                    required 
-                    tabindex="4"
-                  >
-                    <option selected disabled value="">Выберите род деятельности</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-                  <label class="contact-us__label" for="eimeToCallM">Кто вы</label>
-                </div>
-                <div class="contact-us__item">
-                  <input 
-                    id="domainM"
-                    name="domain"
-                    type="text"
-                    placeholder=""
-                    class="contact-us__input"
-                    title="Введите имя"
-                  >
-                  <label class="contact-us__label" for="domainM">Домен (если есть)</label>
-                </div>
-                <div class="contact-us__item">
-                  <input 
-                    id="captionM"
-                    name="caption"
-                    type="text"
-                    placeholder="Input caption"
-                    class="contact-us__input"
-                    title="Input caption"
-                  >
-                  <label class="contact-us__label" for="captionM">Focused state</label>
-                </div>
-              </div>
-
-              <div class="contact-us__column">
-                <div class="contact-us__item">
-                  <p class="contact-us__text">
-                    Оправляя форму, вы соглашаетесь на сбор, обработку и хранение ваших данных сотрудниками компании. <br/>
-                    <a href="#" class="contact-us__link">Политика конфиденциальности</a>
-                  </p>
-                </div>
-              </div>
-
-              <div class="contact-us__column">
-                <div class="contact-us__item">
-                  <button type="submit" class="contact-us__btn btn">
-                    Отправить
-                    <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
-                      <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-    </div> -->
 
     <footer class="footer">
       <div class="footer__container container">
@@ -965,6 +854,5 @@
       </figcaption>
     </figure>
   </div>
-  <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

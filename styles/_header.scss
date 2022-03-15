@@ -67,6 +67,11 @@
   font-size: 2.4rem;
   margin: 0.7rem 2rem 0 0;
   transition: 0.5s ease-in;
+
+  @media (max-width: 480px) {
+    margin: 1.1rem 2rem 0 0;
+    font-size: 2rem;
+  }
   }
   &__menu--collaps {
     @media (max-width: 768px) {
@@ -143,9 +148,15 @@
     font-size: 1.2rem;
     margin: -0.2rem 0.55rem 0 0;
   }
+
   &__link {
     font-size: 14px;
     line-height: 142%;
+    transition: 0.5s ease-out;
+
+    &:hover {
+      color: $text-color-1;
+    }
   }
 }
 // ----------------------------------------------------------------------------

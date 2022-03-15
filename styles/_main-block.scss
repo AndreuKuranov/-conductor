@@ -134,9 +134,40 @@
       display: none;
     }
   }
+  
   &__aliexpress-img {
+    animation: bounceInLeft 40s both 0s infinite;
+    
     width: 212px;
     height: 211px;
     border-radius: 50%;
+    opacity: 1;
+  }
+  &-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    min-width: 212px;
+    min-height: 211px;
+    border-radius: 50%;
+    
+    background: no-repeat 50% 50% rgba($color: #FDBF0F, $alpha: 0.7);
+  }
+  &__1 {
+    animation: bounceInLeft 40s both 10s infinite;
+
+    background: url(../img/advantages/4.png);
+  }
+  &__2 {
+    animation: bounceInLeft 40s both 20s infinite;
+
+    background: url(../img/advantages/5.png);
+  }
+  &__3 {
+    animation: bounceInLeft 40s both 30s infinite;
+
+    background: url(../img/advantages/6.png);
   }
 }

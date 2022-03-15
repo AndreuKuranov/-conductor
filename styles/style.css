@@ -1,5 +1,66 @@
 @charset "UTF-8";
 @import "normalize.css";
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes bounceOutRight {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  30% {
+    opacity: 0.9;
+    transform: translate3d(-20px, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(150%, 0, 0) scaleX(1);
+  }
+}
+@keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+  1.5% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+  1.9% {
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+  2.2% {
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+  2.5% {
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  22.5% {
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  23% {
+    opacity: 1;
+    transform: translate3d(-20px, 0, 0) scaleX(0.9);
+  }
+  25% {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0) scaleX(2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0) scaleX(2);
+  }
+}
 .modal-target {
   display: none;
   width: 100%;
@@ -375,6 +436,12 @@ html {
   margin: 0.7rem 2rem 0 0;
   transition: 0.5s ease-in;
 }
+@media (max-width: 480px) {
+  .navbar__logo {
+    margin: 1.1rem 2rem 0 0;
+    font-size: 2rem;
+  }
+}
 @media (max-width: 768px) {
   .navbar__menu--collaps {
     display: none;
@@ -447,6 +514,10 @@ html {
 .adress__link {
   font-size: 14px;
   line-height: 142%;
+  transition: 0.5s ease-out;
+}
+.adress__link:hover {
+  color: #651FFF;
 }
 
 .contact-info {
@@ -689,9 +760,34 @@ html {
   }
 }
 .main-block__aliexpress-img {
+  animation: bounceInLeft 40s both 0s infinite;
   width: 212px;
   height: 211px;
   border-radius: 50%;
+  opacity: 1;
+}
+.main-block-img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  min-width: 212px;
+  min-height: 211px;
+  border-radius: 50%;
+  background: no-repeat 50% 50% rgba(253, 191, 15, 0.7);
+}
+.main-block__1 {
+  animation: bounceInLeft 40s both 10s infinite;
+  background: url(../img/advantages/4.png);
+}
+.main-block__2 {
+  animation: bounceInLeft 40s both 20s infinite;
+  background: url(../img/advantages/5.png);
+}
+.main-block__3 {
+  animation: bounceInLeft 40s both 30s infinite;
+  background: url(../img/advantages/6.png);
 }
 
 .advertising {
@@ -1508,30 +1604,6 @@ html {
   }
 }
 
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes bounceOutRight {
-  0% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) scaleX(1);
-  }
-  30% {
-    opacity: 0.9;
-    transform: translate3d(-20px, 0, 0) scale(0.8);
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(150%, 0, 0) scaleX(1);
-  }
-}
 .advantages {
   padding: 2rem 0 5.1rem 0;
   position: relative;
