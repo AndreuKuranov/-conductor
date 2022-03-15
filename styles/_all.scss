@@ -107,6 +107,17 @@ html {
       fill: $background-color-1;
     }
   }
+
+  &--color {
+    &:hover {
+      color: $text-color-3;
+      background-color: $background-color-2;
+  
+      svg path {
+        fill: $background-color-2;
+      }
+    }
+  }
 }
 // ----------------------------------------------------------------------------
 .sticker {
@@ -157,6 +168,8 @@ html {
 }
 // ----------------------------------------------------------------------------
 .marker {
+  animation: borderColor 2s ease-out infinite;
+
   position: relative;
   border-radius: 50%;
   min-width: 34px;
@@ -167,6 +180,8 @@ html {
   z-index: 5;
 
   &::after {
+    animation: backgroundColor 2s ease-out infinite;
+
     content: '';
     display: block;
     position: absolute;

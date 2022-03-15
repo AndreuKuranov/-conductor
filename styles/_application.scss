@@ -18,7 +18,6 @@
   @media (max-width: 480px) {
     padding: 1.5rem 0 0 0;
   }
-
   &__container {
     position: relative;
   }
@@ -131,8 +130,6 @@
     }
   }
   &__img-block {
-      
-
     &::after {
       content: '';
       position: absolute;
@@ -146,6 +143,8 @@
     }
   }
   &__img {
+    animation: wobble 6s ease-out 1s infinite backwards;
+
     position: absolute;
     background: url(../img/application/hend.png);
     z-index: 1;
@@ -155,6 +154,8 @@
     right: -2%;
 
     &::after {
+      animation: phoneDisplay 6s ease-out 1s infinite backwards;
+      
       content: '';
       display: block;
       width: 210px;

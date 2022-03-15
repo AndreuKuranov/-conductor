@@ -1,6 +1,5 @@
 .page__advertising {
 }
-
 .advertising {
   margin: 5.2rem 0 0 0;
 
@@ -13,7 +12,6 @@
   @media (max-width: 576px) {
     margin: 3.7rem 0 0 0;
   }
-
   &__container {
     display: flex;
     gap: 6rem;
@@ -35,7 +33,6 @@
     @media (max-width: 768px) {
       flex: 0 1 100%;
     }
-
     &--situation {
       margin: 0 0 0 4.25rem;
       border-right: 1px solid #000;
@@ -98,7 +95,6 @@
   &__list {
   }
 }
-
 .list-advertising {
   display: flex;
   flex-direction: column;
@@ -136,8 +132,9 @@
     @media (max-width: 768px) {
       margin: 1.2rem 0 0 0;
     }
-
     &::after, &::before {
+      animation: pulse 1.5s ease-in-out infinite;
+
       content: '';
       position: absolute;
       display: block;
@@ -188,7 +185,6 @@
       padding: 0 0 0 2.475rem;
       margin: -2.25rem 0 0 0;
     }
-
     &::after {
       content: '№';
       display: flex;
@@ -231,5 +227,4 @@
       max-width: 304px;
     }
   }
-  
 }

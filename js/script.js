@@ -34,4 +34,44 @@ document.addEventListener('DOMContentLoaded', () => {
           
         </div>
     </div> -->
+
+    .modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, 0.8);
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+
+  &--active {
+    display: block;
+  }
+  &__container {
+    position: relative;
+    top: 20px;
+  }
+  &__close {
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/icon/close.svg) no-repeat 50% 50% black;
+    border-radius: 50%;
+    border: none;
+    content: "";
+    cursor: pointer;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
 **/

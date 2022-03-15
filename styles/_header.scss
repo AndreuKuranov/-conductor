@@ -68,10 +68,10 @@
   margin: 0.7rem 2rem 0 0;
   transition: 0.5s ease-in;
 
-  @media (max-width: 480px) {
-    margin: 1.1rem 2rem 0 0;
-    font-size: 2rem;
-  }
+    @media (max-width: 480px) {
+      margin: 1.1rem 2rem 0 0;
+      font-size: 2rem;
+    }
   }
   &__menu--collaps {
     @media (max-width: 768px) {
@@ -102,12 +102,10 @@
       }
     }
   }
-  
   &__item {
     list-style: none;
     padding: 5px 0;
     position: relative;
-    
     transition: 0.5s ease-out;
     display: block;
 
@@ -148,7 +146,6 @@
     font-size: 1.2rem;
     margin: -0.2rem 0.55rem 0 0;
   }
-
   &__link {
     font-size: 14px;
     line-height: 142%;
@@ -226,7 +223,6 @@
     transition: 0.5s ease-out;
   }
 }
-
 .collaps__label--menu::before {
 	background-image: url('../img/icon/menu.svg');
 
@@ -261,5 +257,3 @@
 .collaps__input--contact:checked ~ .header__contact--collaps {
 	display: block;
 }
-
-// ----------------------------------------------------------------------------
