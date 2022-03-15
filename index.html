@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles/fontello.css"/>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Проводник</title>
+  <link rel="shortcut icon" href="img/main-block/aliexpress.png" type="image/x-icon" />
+</head>
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__navbar navbar">
+          <a href="/" class="navbar__logo link color-1" title="На главную">
+            Проводник
+          </a>
+
+          <input 
+						class="collaps__input collaps__input--menu" 
+						type="checkbox" 
+						id="menu" 
+						name="menu"
+					>
+					<label class="collaps__label collaps__label--menu" title="Меню" for="menu"></label>
+          <nav class="navbar__menu navbar__menu--collaps">
+            <ul class="navbar__list navbar__list--collaps">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Услуги</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Цены</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Как это работает</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Блог</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">О компании</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Производителям</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Проекты</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <input 
+					class="collaps__input collaps__input--contact" 
+					type="checkbox" 
+					id="contact" 
+					name="contact"
+				>
+				<label class="collaps__label collaps__label--contact" title="Позвонить" for="contact"></label>
+        <aside class="header__contact header__contact--collaps">
+					<address class="header__info">
+            <div class="header__adress adress color-1">
+              <span class="adress__icon icon-location"></span>
+              <a class="adress__link link" href="https://www.google.com/maps" target="_blank" title="Google карты">г. Москва, ул. Улица, 20 с. 1</a>
+            </div>
+            <div class="header__contact-info contact-info">
+              <div class="contact-info__phone color-1">
+                <span class="contact-info__icon icon-phone"></span>
+                <a class="contact-info__link link" href="tel:+71231231288" title="Позвонить">8(123) 123-12-88</a>
+              </div>
+              <div class="contact-info__email color-1">
+                <a class="contact-info__link link" href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+              </div>
+            </div>
+            <a href="#example1" type="button" class="header__btn btn link"> <!--data-modal="modal__back-call"-->
+              Обратный звонок
+              <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+              </svg>
+            </a>
+					</address>
+				</aside>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="page__main-block main-block">
+        <div class="main-block__container container">
+          <div class="main-block__body">
+            <h1 class="main-block__title">Зайди на</h1>
+            <div class="main-block__sub-tiile ibg">
+              <img class="main-block__sub-tiile-img ibg__img" src="img/main-block/aliexpress_logo.svg" alt="AliExpress"/>
+            </div>
+            <div class="main-block__text">
+              Лучшее решение для небольших <br/>
+              интернет-магазинов и производителей
+            </div>
+            <button type="button" class="main-block__btn btn">
+              Хочу на AliExpress
+              <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+              </svg>
+            </button>
+          </div>
+          <img class="main-block__background-img" src="img/main-block/girl.png" alt="background-girl"/>
+          <div class="main-block__aliexpress">
+            <img class="main-block__aliexpress-img" src="img/main-block/aliexpress.png" alt="aliexpress"/>
+          </div>
+        </div>
+      </div>
+
+      <section class="page__advertising advertising">
+        <div class="advertising__container container">
+          <div class="advertising__column advertising__column--situation">
+            <div class="advertising__sticker sticker advertising__sticker--situation">
+              <h3 class="sticker__title">Ситуация</h3>
+              <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+              </svg>
+              <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="advertising__block-img ibg">
+              <img class="advertising__img ibg__img" src="img/advertising/rectangle.jpg" alt="rectangle" />
+            </div>
+            <p class="advertising__text">Вы тратите много сил и денег на маркетинг и рекламу своих товаров. Самые эффективные из каналов — дорогие и требуют большой работы.</p>
+          </div>
+          <div class="advertising__column">
+            <div class="advertising__sticker sticker">
+              <h3 class="sticker__title">Решение</h3>
+              <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+              </svg>
+              <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="advertising__sub-title">Точнее, их два.</div>
+            <ol class="advertising__list list-advertising">
+              <li class="list-advertising__item">
+                <div class="list-advertising__marker">
+                  <span class="list-advertising__number">1</span>
+                </div>
+                <p class="list-advertising__text">Сотрудничать с существующим магазином на AliExpress и избавить себя от забот вроде вопросов колл-центра, хранения и доставки. И опять же – не тратиться на маркетинг.</p>
+              </li>
+              <li class="list-advertising__item">
+                <div class="list-advertising__marker list-advertising__marker--2">
+                  <span class="list-advertising__number">2</span>
+                </div>
+                <p class="list-advertising__text">Cоздать магазин на маркетплейсе AliExpress и реализовывать товары покупателям со всего мира. Один емкий и грамотный канал продаж заменит все рекламные инструменты, которыми вы пользовались до этого.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__application application">
+        <div class="application__container container">
+          <h2 class="application__title-block title-block title-block--color">Что вы получите с магазином <br/> на AliExpress?</h2>
+          <div class="application__body">
+            <div class="application__item">
+              <div class="application__card">
+                <span class="application__icon icon-calc"></span>
+                <p class="application__text">Снизите операционные расходы и расходы на маркетинг.</p>
+              </div>
+            </div>
+            <div class="application__item">
+              <div class="application__card">
+                <span class="application__icon icon-schedule"></span>
+                <p class="application__text">Трафик из очень активных покупателей из регионов.</p>
+              </div>
+            </div>
+            <div class="application__item">
+              <div class="application__card">
+                <span class="application__icon icon-bigsales"></span>
+                <p class="application__text">Сможете реализовывать продукцию в очень больших объемах.</p>
+              </div>
+            </div>
+            <div class="application__item">
+              <div class="application__card">
+                <span class="application__icon icon-ruble"></span>
+                <p class="application__text">В 2020 году еще увеличите продажи за счет покупателей из стран СНГ.</p>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="application__btn btn">
+            Скачать предложение
+            <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+              <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="page__instruction instruction">
+        <div class="instruction__container container">
+          <h2 class="instruction__title-block title-block">Почему выходить на AliExpress самостоятельно сложно?</h2>
+          <div class="instruction__body">
+            <div class="instruction__column instruction__column--independently">
+              <div class="instruction__sticker instruction__sticker--independently sticker">
+                <h3 class="sticker__title">Самостоятельно</h3>
+                <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+                <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <ul class="instruction__list list-independently">
+                <li class="list-independently__item">Китайская площадка со сложными  правилами и формулами.</li>
+                <li class="list-independently__item">Ограниченные возможности без статуса технического партнера.</li>
+                <li class="list-independently__item">
+                  Очень тяжело добиться высокого рейтинга магазинов и товаров – <br/>
+                  <b>главного фактора в выдаче по запросу.</b>
+                </li>
+              </ul>
+              <div class="instruction__block-img ibg">
+                <img class="instruction__img ibg__img" src="img/instruction/laptop.jpg" alt="laptop" />
+              </div>
+            </div>
+            <div class="instruction__column instruction__column--support">
+              <div class="instruction__sticker sticker">
+                <h3 class="sticker__title">С техническим партнером Content Hub</h3>
+                <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+                <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <ul class="instruction__list list-support">
+                <li class="list-support__item">
+                  <div class="list-support__marker marker"></div>
+                  <p class="list-support__text">Берем заключение договора на себя.</p>
+                </li>
+                <li class="list-support__item">
+                  <div class="list-support__marker marker"></div>
+                  <p class="list-support__text">Помогаем с описанием товаров.</p>
+                </li>
+                <li class="list-support__item">
+                  <div class="list-support__marker marker"></div>
+                  <p class="list-support__text">Брендируем магазин.</p>
+                </li>
+                <li class="list-support__item">
+                  <div class="list-support__marker marker"></div>
+                  <p class="list-support__text">Создаем аккаунт.</p>
+                </li>
+                <li class="list-support__item">
+                  <div class="list-support__marker marker"></div>
+                  <p class="list-support__text">Коннектим магазин с вашей CRM.</p>
+                </li>
+              </ul>
+              <div class="instruction__row">
+                <span class="instruction__icon icon-vverx"></span>
+                <strong class="instruction__text">И главное — продвигаем в рейтинге на первые позиции в выдаче.</strong>
+              </div>
+              <button type="button" class="instruction__btn btn">
+                Написать нам
+                <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                  <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__interests interests">
+        <div class="interests__container container">
+          <h2 class="interests__title-block title-block title-block--color">Кому интересно на AliExpress с Проводником?</h2>
+          <div class="interests__body">
+            <div class="interests__row">
+              <span class="interests__icon interests__icon--dom icon-dom"></span>
+              <div class="interests__content content">
+                <h4 class="content__title">Небольшим интернет-магазинам</h4>
+                <p class="content__text">С ограниченными ресурсами и бюджетом на рекламу.</p>
+              </div>
+            </div>
+            <div class="interests__row">
+              <span class="interests__icon icon-zavodik"></span>
+              <div class="interests__content content">
+                <h4 class="content__title">Небольшим производителям</h4>
+                <p class="content__text">Готовы поставлять товар реселлеру и не хотят заниматься продвижением товаров конечному покупателю.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__principle-operation principle-operation">
+        <div class="principle-operation__container container">
+          <h2 class="principle-operation__title-block title-block">Как организован процесс?</h2>
+          <ol class="principle-operation__list">
+            <li class="principle-operation__item principle-operation__item--rtl principle-operation__item--1">
+              <div class="principle-operation__marker marker-number">
+                <span class="marker-number__content">1</span>
+              </div>
+              <p class="principle-operation__text principle-operation__text--rtl">Проводник ищет магазины и производителей и заводит их на маркетплейс.</p>
+            </li>
+            <li class="principle-operation__item principle-operation__item--rtl principle-operation__item--2">
+              <div class="principle-operation__marker marker-number">
+                <span class="marker-number__content">2</span>
+              </div>
+              <p class="principle-operation__text principle-operation__text--rtl">Представляет интересы мерчантов и коммуницирует с площадкой по всем установочным вопросам.</p>
+            </li>
+            <li class="principle-operation__item principle-operation__item--3">
+              <div class="principle-operation__marker marker-number">
+                <span class="marker-number__content">3</span>
+              </div>
+              <p class="principle-operation__text">Ищет партнеров-реселлеров при необходимости и помогает наладить взаимодействие.</p>
+            </li>
+            <li class="principle-operation__item principle-operation__item--4">
+              <div class="principle-operation__marker marker-number">
+                <span class="marker-number__content">4</span>
+              </div>
+              <p class="principle-operation__text">Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.</p>
+            </li>
+          </ol>
+          <div class="principle-operation__img-block">
+            <img class="principle-operation__img" src="img/principle-operation/chels-target.png" alt="chels-target"/>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__advantages advantages">
+        <div class="advantages__container container">
+          <h2 class="advantages__title-block title-block">Чего добились с Проводником <br/> другие магазины?</h2>
+          <div class="advantages__body">
+
+            <input 
+              class="advantages__input advantages__input--1" 
+              type="radio" 
+              id="radioBtnOne" 
+              name="radioBtn"
+              checked
+            >
+            <label class="advantages__label advantages__label--1" for="radioBtnOne"></label>
+
+            <input 
+              class="advantages__input advantages__input--2" 
+              type="radio" 
+              id="radioBtnTwo" 
+              name="radioBtn"
+            >
+            <label class="advantages__label advantages__label--2" for="radioBtnTwo"></label>
+
+            <input 
+              class="advantages__input advantages__input--3" 
+              type="radio" 
+              id="radioBtnThree" 
+              name="radioBtn"
+            >
+            <label class="advantages__label advantages__label--3" for="radioBtnThree"></label>
+
+            <input 
+              class="advantages__input advantages__input--4" 
+              type="radio" 
+              id="radioBtnFour" 
+              name="radioBtn"
+            >
+            <label class="advantages__label advantages__label--4" for="radioBtnFour"></label>
+
+            <div class="advantages__block block-advantages block-advantages--1">
+              <div class="block-advantages__sticker sticker">
+                <h3 class="sticker__title">Кейс</h3>
+                <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+                <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="block-advantages__body">
+                <div class="block-advantages__img-block">
+                  <img class="block-advantages__img" src="img/advantages/h_m.svg" alt="H&M">
+                </div>
+                <div class="block-advantages__column">
+                  <h2 class="block-advantages__title">Продвижение и раскрутка  магазина  одежды</h2>
+                  <p class="block-advantages__text">Проводник ищет магазины и производителей и заводит их на маркетплейс. Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.</p>
+                  <ul class="block-advantages__list list-advantages">
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">765 885</div>
+                      <p class="list-advantages__text">Законченных покупок</p>
+                    </li>
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">789 654</div>
+                      <p class="list-advantages__text">Просмотров магазина</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="advantages__block block-advantages block-advantages--2">
+              <div class="block-advantages__sticker sticker">
+                <h3 class="sticker__title">Кейс-2</h3>
+                <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+                <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="block-advantages__body">
+                <div class="block-advantages__img-block">
+                  <img class="block-advantages__img" src="img/advantages/4.png" alt="H&M">
+                </div>
+                <div class="block-advantages__column">
+                  <h2 class="block-advantages__title">Продвижение и раскрутка  магазина  одежды</h2>
+                  <p class="block-advantages__text">Проводник ищет магазины и производителей и заводит их на маркетплейс. Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.</p>
+                  <ul class="block-advantages__list list-advantages">
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">765 885</div>
+                      <p class="list-advantages__text">Законченных покупок</p>
+                    </li>
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">789 654</div>
+                      <p class="list-advantages__text">Просмотров магазина</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="advantages__block block-advantages block-advantages--3">
+              <div class="block-advantages__sticker sticker">
+                <h3 class="sticker__title">Кейс-3</h3>
+                <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+                <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="block-advantages__body">
+                <div class="block-advantages__img-block">
+                  <img class="block-advantages__img" src="img/advantages/5.png" alt="H&M">
+                </div>
+                <div class="block-advantages__column">
+                  <h2 class="block-advantages__title">Продвижение и раскрутка  магазина  одежды</h2>
+                  <p class="block-advantages__text">Проводник ищет магазины и производителей и заводит их на маркетплейс. Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.</p>
+                  <ul class="block-advantages__list list-advantages">
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">765 885</div>
+                      <p class="list-advantages__text">Законченных покупок</p>
+                    </li>
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">789 654</div>
+                      <p class="list-advantages__text">Просмотров магазина</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="advantages__block block-advantages block-advantages--4">
+              <div class="block-advantages__sticker sticker">
+                <h3 class="sticker__title">Кейс-4</h3>
+                <svg class="sticker__svg-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+                <svg class="sticker__svg-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 5 40">
+                  <path fill="#651fff" fill-rule="evenodd" d="M5 0H4a4 4 0 00-4 4v1a2 2 0 110 4v3a2 2 0 110 4v2a2 2 0 110 4v3a2 2 0 110 4v3a2 2 0 110 4 4 4 0 004 4h1V0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="block-advantages__body">
+                <div class="block-advantages__img-block">
+                  <img class="block-advantages__img" src="img/advantages/6.png" alt="H&M">
+                </div>
+                <div class="block-advantages__column">
+                  <h2 class="block-advantages__title">Продвижение и раскрутка  магазина  одежды</h2>
+                  <p class="block-advantages__text">Проводник ищет магазины и производителей и заводит их на маркетплейс. Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.</p>
+                  <ul class="block-advantages__list list-advantages">
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">765 885</div>
+                      <p class="list-advantages__text">Законченных покупок</p>
+                    </li>
+                    <li class="list-advantages__item">
+                      <div class="list-advantages__marker marker"></div>
+                      <div class="list-advantages__sum">789 654</div>
+                      <p class="list-advantages__text">Просмотров магазина</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__img-block">
+            <img class="advantages__img-bag" src="img/advantages/bag.png" alt="bag">
+            <img class="advantages__img-target" src="img/advantages/target.png" alt="target">
+          </div>
+        </div>
+      </section>
+
+      <section class="page__stages stages">
+        <div class="stages__container container">
+          <h2 class="stages__title-block title-block title-block--color">Как начать?</h2>
+          <ul class="stages__list">
+            <li class="stages__item">
+              <div class="stages__item-content">
+                <div class="stages__marker marker-number"><span class="marker-number__content">1</span></div>
+                <p class="stages__text">Заполните форму.</p>
+              </div>
+            </li>
+            <li class="stages__item">
+              <div class="stages__item-content">
+                <div class="stages__marker marker-number"><span class="marker-number__content">2</span></div>
+                <p class="stages__text stages__text--width-1">Обсудим ваши задачи с менеджером.</p>
+              </div>
+            </li>
+            <li class="stages__item">
+              <div class="stages__item-content">
+                <div class="stages__marker marker-number"><span class="marker-number__content">3</span></div>
+                <p class="stages__text stages__text--width-2">Сформируем пакет услуг.</p>
+              </div>
+            </li>
+            <li class="stages__item">
+              <div class="stages__item-content">
+                <div class="stages__marker marker-number"><span class="marker-number__content">4</span></div>
+                <p class="stages__text">Заключим договор.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page__contact-us contact-us">
+        <div class="contact-us__container container">
+          <form action="/" method="post" class="contact-us__form">
+            <h2 class="contact-us__title-block title-block">Пожалуйста, оставьте свои контакты</h2>
+            <div class="contact-us__body">
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <input 
+                    id="name" 
+                    name="name" 
+                    type="text" 
+                    placeholder="Как к вам обращаться"
+                    pattern="^[A-Za-zА-Яа-яЁё]+$"
+                    class="contact-us__input"
+                    required
+                    tabindex="1"
+                    title="Введите имя"
+                  >
+                  <label class="contact-us__label" for="name">Имя</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="phone" 
+                    name="phone" 
+                    type="tel"
+                    pattern="\+?[0-9\s\-\(\)]+"
+                    placeholder="+7 (123) 12-12-123"
+                    class="contact-us__input"
+                    required
+                    tabindex="2"
+                    title="Формат номера: +7 (123) 12-12-123"
+                  >
+                  <label class="contact-us__label" for="phone">Телефон</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="email" 
+                    name="email" 
+                    type="email" 
+                    placeholder="Нужен для связи"
+                    class="contact-us__input"
+                    required
+                    tabindex="3"
+                    title="Формат e-mail: admin@mail.ru"
+                  >
+                  <label class="contact-us__label" for="email">Е-mail</label>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <select
+                    name="eimeToCall" 
+                    id="eimeToCall"
+                    class="contact-us__input contact-us__select"
+                    required 
+                    tabindex="4"
+                  >
+                    <option selected disabled value="">Выберите род деятельности</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <label class="contact-us__label" for="eimeToCall">Кто вы</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="domain"
+                    name="domain"
+                    type="text"
+                    placeholder=""
+                    class="contact-us__input"
+                    title="Введите имя"
+                  >
+                  <label class="contact-us__label" for="domain">Домен (если есть)</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="caption"
+                    name="caption"
+                    type="text"
+                    placeholder="Input caption"
+                    class="contact-us__input"
+                    title="Input caption"
+                  >
+                  <label class="contact-us__label" for="caption">Focused state</label>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <p class="contact-us__text">
+                    Оправляя форму, вы соглашаетесь на сбор, обработку и хранение ваших данных сотрудниками компании. <br/>
+                    <a href="#" class="contact-us__link">Политика конфиденциальности</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <button type="submit" class="contact-us__btn btn">
+                    Отправить
+                    <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                      <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="contact-us__background ibg">
+          <img class="contact-us__background-img ibg__img" src="img/contact-us/scenery.jpg" alt="background"/>
+        </div>
+      </section>
+      <!-- <div id="modal__back-call" class="modal">
+        <div class="modal__container contact-us__container container">
+          <button type="button" class="modal__close" data-close></button>
+          <form action="/" method="post" class="contact-us__form">
+            <h2 class="contact-us__title-block title-block">Пожалуйста, оставьте свои контакты</h2>
+            <div class="contact-us__body">
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <input 
+                    id="nameM" 
+                    name="name" 
+                    type="text" 
+                    placeholder="Как к вам обращаться"
+                    pattern="^[A-Za-zА-Яа-яЁё]+$"
+                    class="contact-us__input"
+                    required
+                    tabindex="1"
+                    title="Введите имя"
+                  >
+                  <label class="contact-us__label" for="nameM">Имя</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="phoneM" 
+                    name="phone" 
+                    type="tel"
+                    pattern="\+?[0-9\s\-\(\)]+"
+                    placeholder="+7 (123) 12-12-123"
+                    class="contact-us__input"
+                    required
+                    tabindex="2"
+                    title="Формат номера: +7 (123) 12-12-123"
+                  >
+                  <label class="contact-us__label" for="phoneM">Телефон</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="emailM" 
+                    name="email" 
+                    type="email" 
+                    placeholder="Нужен для связи"
+                    class="contact-us__input"
+                    required
+                    tabindex="3"
+                    title="Формат e-mail: admin@mail.ru"
+                  >
+                  <label class="contact-us__label" for="emailM">Е-mail</label>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <select
+                    name="eimeToCall" 
+                    id="eimeToCallM"
+                    class="contact-us__input contact-us__select"
+                    required 
+                    tabindex="4"
+                  >
+                    <option selected disabled value="">Выберите род деятельности</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <label class="contact-us__label" for="eimeToCallM">Кто вы</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="domainM"
+                    name="domain"
+                    type="text"
+                    placeholder=""
+                    class="contact-us__input"
+                    title="Введите имя"
+                  >
+                  <label class="contact-us__label" for="domainM">Домен (если есть)</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="captionM"
+                    name="caption"
+                    type="text"
+                    placeholder="Input caption"
+                    class="contact-us__input"
+                    title="Input caption"
+                  >
+                  <label class="contact-us__label" for="captionM">Focused state</label>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <p class="contact-us__text">
+                    Оправляя форму, вы соглашаетесь на сбор, обработку и хранение ваших данных сотрудниками компании. <br/>
+                    <a href="#" class="contact-us__link">Политика конфиденциальности</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <button type="submit" class="contact-us__btn btn">
+                    Отправить
+                    <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                      <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div> -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__navbar navbar">
+          <a href="/" class="navbar__logo navbar__logo--footer link color-1" title="На главную">
+            Проводник
+          </a>
+
+          <nav class="navbar__menu">
+            <ul class="navbar__list navbar__list--footer">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Услуги</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Цены</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Как это работает</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Блог</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">О компании</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Производителям</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Проекты</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <aside class="footer__contact">
+					<address class="footer__info">
+            <div class="footer__copy copy">
+              <span class="copy__icon icon-copy"></span>
+              <p class="copy__text">2018. <br />Все права защищены.</p>
+            </div>
+            <div class="footer__adress adress color-1">
+              <span class="adress__icon icon-location"></span>
+              <a class="adress__link link" href="https://www.google.com/maps" target="_blank" title="Google карты">г. Москва, ул. Улица, 20 с. 1</a>
+            </div>
+            <div class="footer__contact-info contact-info">
+              <div class="contact-info__phone color-1">
+                <span class="contact-info__icon icon-phone"></span>
+                <a class="contact-info__link link" href="tel:+71231231288" title="Позвонить">8(123) 123-12-88</a>
+              </div>
+              <div class="contact-info__email color-1">
+                <a class="contact-info__link link" href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+              </div>
+            </div>
+            <a href="https://www.facebook.com/" class="footer__icon icon-facebook" target="_blank"></a>
+            <a href="#example1" type="button" class="footer__btn btn link">
+              Обратный звонок
+              <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+              </svg>
+            </a>
+					</address>
+				</aside>
+      </div>
+    </footer>
+
+    </main>
+  </div>
+  <div class="modal-target" id="example1">
+    <figure class="modal-target__container">
+      <a href="#" class="modal-target__close"></a>
+      <figcaption class="modal-target__content">
+        <div class="contact-us__container container">
+          <form action="/" method="post" class="contact-us__form">
+            <h2 class="contact-us__title-block title-block">Пожалуйста, оставьте свои контакты</h2>
+            <div class="contact-us__body">
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <input 
+                    id="nameM" 
+                    name="name" 
+                    type="text" 
+                    placeholder="Как к вам обращаться"
+                    pattern="^[A-Za-zА-Яа-яЁё]+$"
+                    class="contact-us__input"
+                    required
+                    tabindex="1"
+                    title="Введите имя"
+                  >
+                  <label class="contact-us__label" for="nameM">Имя</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="phoneM" 
+                    name="phone" 
+                    type="tel"
+                    pattern="\+?[0-9\s\-\(\)]+"
+                    placeholder="+7 (123) 12-12-123"
+                    class="contact-us__input"
+                    required
+                    tabindex="2"
+                    title="Формат номера: +7 (123) 12-12-123"
+                  >
+                  <label class="contact-us__label" for="phoneM">Телефон</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="emailM" 
+                    name="email" 
+                    type="email" 
+                    placeholder="Нужен для связи"
+                    class="contact-us__input"
+                    required
+                    tabindex="3"
+                    title="Формат e-mail: admin@mail.ru"
+                  >
+                  <label class="contact-us__label" for="emailM">Е-mail</label>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <select
+                    name="eimeToCall" 
+                    id="eimeToCallM"
+                    class="contact-us__input contact-us__select"
+                    required 
+                    tabindex="4"
+                  >
+                    <option selected disabled value="">Выберите род деятельности</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <label class="contact-us__label" for="eimeToCallM">Кто вы</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="domainM"
+                    name="domain"
+                    type="text"
+                    placeholder=""
+                    class="contact-us__input"
+                    title="Введите имя"
+                  >
+                  <label class="contact-us__label" for="domainM">Домен (если есть)</label>
+                </div>
+                <div class="contact-us__item">
+                  <input 
+                    id="captionM"
+                    name="caption"
+                    type="text"
+                    placeholder="Input caption"
+                    class="contact-us__input"
+                    title="Input caption"
+                  >
+                  <label class="contact-us__label" for="captionM">Focused state</label>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <p class="contact-us__text">
+                    Оправляя форму, вы соглашаетесь на сбор, обработку и хранение ваших данных сотрудниками компании. <br/>
+                    <a href="#" class="contact-us__link">Политика конфиденциальности</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-us__column">
+                <div class="contact-us__item">
+                  <button type="submit" class="contact-us__btn btn">
+                    Отправить
+                    <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                      <path class="btn__path" d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+  <!-- <script src="js/script.js"></script> -->
+</body>
+</html>

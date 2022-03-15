@@ -1,0 +1,96 @@
+.modal-target {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  top: 1rem;
+  right: 0;
+  z-index: 1000;
+
+  &:target {
+    display: flex;
+  
+    @media (min-width: 993px) {
+      left: calc(50% - 486px);
+    }
+  }
+
+  &__container {
+    margin: 0 1.3rem 0 1rem;
+  }
+  &__close {
+    position: relative;
+    display: block;
+
+    &::after {
+      right: 0.5rem;
+      top: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      display: flex;
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      background: url(../img/icon/close.svg) no-repeat 50% 50% black;
+      border-radius: 50%;
+      color: white;
+      content: "";
+      cursor: pointer;
+    }
+    &::before {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: rgba(0,0,0,.7);
+      content: "";
+      cursor: default;
+    }
+  }
+  &__content {
+    position: relative;
+  }
+}
+//-------------------------------------------------------------------------------
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, 0.8);
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+
+  &--active {
+    display: block;
+  }
+  &__container {
+    position: relative;
+    top: 20px;
+  }
+  &__close {
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/icon/close.svg) no-repeat 50% 50% black;
+    border-radius: 50%;
+    border: none;
+    content: "";
+    cursor: pointer;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}

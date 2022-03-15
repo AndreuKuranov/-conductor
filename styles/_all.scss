@@ -1,0 +1,215 @@
+html {
+	font-size: 20px;
+	transition: 0.5s;
+
+  @media (max-width: 992px) {
+    font-size: 19px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 576px) {
+    font-size: 17px;
+  }
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+// ----------------------------------------------------------------------------
+.body {
+	height: 100%;
+  font: {
+    family: 'Roboto', sans-serif;
+    size: 16px;
+    weight: 400;
+  }
+}
+::selection {
+  background: rgba(255, 255, 0, 0.6);
+}
+// ----------------------------------------------------------------------------
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+// ----------------------------------------------------------------------------
+.container {
+  max-width: 1170px;
+	padding: 0 15px;
+  margin: 0 auto;
+	box-sizing: content-box;
+}
+// ----------------------------------------------------------------------------
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+// ----------------------------------------------------------------------------
+.ibg {
+	position: relative;
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+// ----------------------------------------------------------------------------
+.color-1:hover {
+  color: $text-color-1;
+}
+.color-2:hover {
+  color: $text-color-2;
+}
+// ----------------------------------------------------------------------------
+.btn {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  min-height: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 117%;
+  font-weight: 700;
+  color: $text-color-5;
+  background-color: $background-color-3;
+  border: none;
+  border-radius: 6px 2px 2px 6px;
+  padding: 5px 17px;
+  margin: 0 9px 0 0;
+  position: relative;
+  z-index: 10;
+  transition: 0.5s ease-in;
+  box-sizing: border-box;
+
+  svg {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 99%;
+
+    path {
+      transition: 0.5s ease-in;
+    }
+  }
+  &:hover {
+    color: $text-color-3;
+    background-color: $background-color-1;
+
+    svg path {
+      fill: $background-color-1;
+    }
+  }
+}
+// ----------------------------------------------------------------------------
+.sticker {
+  display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  min-height: 2rem;
+  background-color: $background-color-1;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+
+  svg {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+  }
+  &__svg-left {
+    left: -0.2rem;
+  }
+  &__svg-right {
+    transform: rotate(180deg);
+    right: -0.2rem;
+  }
+  &__title {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    line-height: 117%;
+    color: $text-color-5;
+  }
+}
+// ----------------------------------------------------------------------------
+.title-block {
+  font-size: 1.6rem;
+  line-height: 132%;
+  margin: 0;
+
+  &--color {
+    color: $text-color-5;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.45rem;
+  }
+}
+// ----------------------------------------------------------------------------
+.marker {
+  position: relative;
+  border-radius: 50%;
+  min-width: 34px;
+  min-height: 34px;
+  border: 7px solid #FCBF14;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 5;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #651FFF;
+    top: 4px;
+    left: 4px;
+  }
+}
+// ----------------------------------------------------------------------------
+.marker-number {
+  position: relative;
+  border-radius: 50%;
+  border: 0.35rem solid #FCBF14;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 5;
+  min-width: 3.1rem;
+  min-height: 3.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: #651FFF;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  &__content {
+    color: $text-color-5;
+    font-size: 1.2rem;
+    line-height: 117%;
+    font-weight: 700;
+    position: relative;
+    z-index: 5;
+  }
+}
+// ----------------------------------------------------------------------------

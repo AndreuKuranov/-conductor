@@ -1,0 +1,121 @@
+.page__stages {
+}
+
+.stages {
+  background-color: $background-color-1;
+  padding: 2.2rem 0 3.9rem 0;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0 3rem 0;
+  }
+  @media (max-width: 480px) {
+    padding: 1.5rem 0 2rem 0;
+  }
+
+  &__container {
+  }
+  &__title-block {
+    margin: 0 0 3rem 0;
+
+    @media (max-width: 768px) {
+      margin: 0 0 2.25rem 0;
+    }
+    @media (max-width: 480px) {
+      margin: 0 0 1.75rem 0;
+    }
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.7rem;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    position: relative;
+
+    @media (max-width: 768px) {
+      gap: 0.75rem;
+    }
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &:not(:last-child)::after {
+      align-self: center;
+      content: '';
+      display: block;
+      height: 2px;
+      min-width: 2.5rem;
+      background-color: #FFF;
+
+      @media (max-width: 768px) {
+        min-width: 1.5rem;
+      }
+    }
+    &:not(:last-child)::before {
+      content: '';
+      display: block;
+      align-self: center;
+      position: absolute;
+      height: 9px;
+      width: 9px;
+      border: 2px solid #fff;
+      border-bottom: none;
+      border-left: none;
+      right: 0;
+      transform: rotate(45deg);
+    }
+
+    @media (max-width: 576px) {
+      &:not(:last-child)::after {
+        transform: rotate(90deg);
+      }
+      &:not(:last-child)::before {
+        right: 50%;
+        margin: 0 -5.5px -11px 0;
+        bottom: 0;
+        transform: rotate(135deg);
+      }
+    }
+  }
+  &__item-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__marker {
+    border: 0.35rem solid #FFF;
+    background-color: #FDBF0F;
+  }
+  &__text {
+    color: $text-color-5;
+    margin: 0;
+    font-size: 0.8rem;
+
+    @media (min-width: 993px) {
+      max-width: 85px;
+
+      &--width-1 {
+        max-width: 178px;
+      }
+      &--width-2  {
+        max-width: 105px;
+      }
+    }
+    @media (max-width: 992px) {
+      max-width: 110px;
+    }
+  }
+}

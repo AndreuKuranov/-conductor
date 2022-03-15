@@ -1,0 +1,109 @@
+.page__application {
+}
+.application {
+  padding: 3.5rem 0 4rem 0;
+  background-color: $background-color-6;
+
+  @media (max-width: 992px) {
+    padding: 3rem 0 3.5rem 0;
+  }
+  @media (max-width: 768px) {
+    padding: 2.5rem 0 3rem 0;
+  }
+  @media (max-width: 576px) {
+    padding: 2rem 0 2.5rem 0;
+  }
+  @media (max-width: 480px) {
+    padding: 1.5rem 0 2rem 0;
+  }
+
+  &__container {
+  }
+  &__title-block {
+    margin: 0 0 3.75rem 0;
+
+    @media (max-width: 768px) {
+      margin: 0 0 3rem 0;
+    }
+    @media (max-width: 576px) {
+      margin: 0 0 2.5rem 0;
+    }
+    @media (max-width: 480px) {
+      margin: 0 0 2rem 0;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.55rem -2.4rem -0.55rem;
+    max-width: 794px;
+
+    @media (max-width: 630px) {
+      margin: 0 -0.55rem -1.5rem -0.55rem;
+    }
+    @media (max-width: 480px) {
+      margin: 0 -0.55rem -1rem -0.55rem;
+    }
+  }
+  &__item {
+    flex: 0 1 50%;
+
+    @media (max-width: 630px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__card {
+    margin: 0 0.55rem 2.4rem 0.55rem;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    min-height: 6rem;
+    background-color: $background-color-5;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.14), 0px 16px 24px rgba(0, 0, 0, 0.08);
+
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+    @media (max-width: 630px) {
+      margin: 0 0.55rem 1.5rem 0.55rem;
+    }
+    @media (max-width: 480px) {
+      margin: 0 0.55rem 1rem 0.55rem;
+      padding: 0 0.7rem;
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color-1;
+    font-size: 1.9rem;
+    padding: 0 0.5rem 0 0;
+  }
+  &__text {
+  }
+  &__btn {
+    margin: 3rem 0 0 0;
+    font-size: 1.2rem;
+    min-height: 3rem;
+    padding: 5px 1.75rem 8px 1.9rem;
+    background-color: $background-color-7;
+
+    @media (max-width: 576px) {
+      margin: 2.5rem 0 0 0;
+    }
+
+    svg path {
+      fill: $background-color-7;
+    }
+    &:hover {
+      color: $text-color-5;
+      background-color: $background-color-3;
+  
+      svg path {
+        fill: $background-color-3;
+      }
+    }
+  }
+}
+
