@@ -144,4 +144,14 @@
   }
   &__background-img {
   }
+  &__air {
+    animation: planeAirRotate 0.5s linear infinite backwards;
+
+    position: absolute;
+    top: -7%;
+    left: 50%;
+  }
+  &__plane {
+    animation: planeAir 10s linear infinite backwards;
+  }
 }

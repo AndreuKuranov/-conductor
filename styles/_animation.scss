@@ -364,3 +364,26 @@
     opacity: 1;
   }
 }
+
+@keyframes planeAir {
+  0% {
+    transform: translate3d(110vw, 0, 0) rotate3d(0, 0, 0, 0);
+  }
+  45% {
+    transform: translate3d(-110vw, 0, 0) rotate3d(0, 0, 0, 0);
+  }
+  55% {
+    transform: translate3d(-110vw, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: translate3d(110vw, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+}
+@keyframes planeAirRotate {
+  0% {
+    transform: rotate3d(1, 0, 0, 10deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, -10deg);
+  }
+}

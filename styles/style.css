@@ -351,6 +351,28 @@
     opacity: 1;
   }
 }
+@keyframes planeAir {
+  0% {
+    transform: translate3d(110vw, 0, 0) rotate3d(0, 0, 0, 0);
+  }
+  45% {
+    transform: translate3d(-110vw, 0, 0) rotate3d(0, 0, 0, 0);
+  }
+  55% {
+    transform: translate3d(-110vw, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: translate3d(110vw, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+}
+@keyframes planeAirRotate {
+  0% {
+    transform: rotate3d(1, 0, 0, 10deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, -10deg);
+  }
+}
 .modal-target {
   display: none;
   width: 100%;
@@ -2565,6 +2587,16 @@ html {
     object-position: right;
   }
 }
+.contact-us__air {
+  animation: planeAirRotate 0.5s linear infinite backwards;
+  position: absolute;
+  top: -7%;
+  left: 50%;
+}
+.contact-us__plane {
+  animation: planeAir 10s linear infinite backwards;
+}
+
 .footer {
   padding: 2.75rem 0 2.9rem 0;
 }
