@@ -2590,11 +2590,19 @@ html {
 .contact-us__air {
   animation: planeAirRotate 0.5s linear infinite backwards;
   position: absolute;
-  top: -7%;
+  top: -40px;
   left: 50%;
 }
 .contact-us__plane {
   animation: planeAir 10s linear infinite backwards;
+  width: 10rem;
+  height: 10rem;
+}
+@media (max-width: 576px) {
+  .contact-us__plane {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 .footer {
