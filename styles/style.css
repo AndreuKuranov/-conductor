@@ -2588,7 +2588,7 @@ html {
   }
 }
 .contact-us__air {
-  animation: planeAirRotate 0.5s linear infinite backwards;
+  animation: planeAirRotate 1s linear infinite backwards;
   position: absolute;
   top: -40px;
   left: 50%;
@@ -2603,6 +2603,9 @@ html {
     width: 8rem;
     height: 8rem;
   }
+}
+.contact-us__plane:hover {
+  animation-play-state: paused;
 }
 
 .footer {

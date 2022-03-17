@@ -145,7 +145,7 @@
   &__background-img {
   }
   &__air {
-    animation: planeAirRotate 0.5s linear infinite backwards;
+    animation: planeAirRotate 1s linear infinite backwards;
 
     position: absolute;
     top: -40px;
@@ -160,6 +160,9 @@
     @media (max-width: 576px) {
       width: 8rem;
       height: 8rem;
+    }
+    &:hover {
+      animation-play-state: paused;
     }
   }
 }
